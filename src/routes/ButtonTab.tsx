@@ -6,7 +6,7 @@ const {Navigator,Screen} = createBottomTabNavigator()
 
 export function MyTabs() {
     return(
-        <Navigator>
+        <Navigator screenOptions={{headerShown:false, tabBarStyle:{backgroundColor:'#8130a1',borderTopWidth:0,elevation:0,shadowOpacity:0}}}>
             <Screen name="Home" component={Home}/>
             <Screen name="Skills" component={Skill}/>
         </Navigator>
